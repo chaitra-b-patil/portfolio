@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7ec53f96d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu" class="menu-list">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h5>HELLO!</h5>
+                <h1>I'm <span>Chaitra B Patil</span><br></h1>
+                <h6>Developer</h6>
+            </div>
+            <div class="social-icons-list">
+                <a href="https://www.linkedin.com/in/chaitrabpatil/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/chaitra-b-patil"><i class="fa-brands fa-square-github"></i></a><br><br>
+                <a href="https://drive.google.com/file/d/1rPmqTVJXQqetq4WC1dC6t3ETG1yRZj4G/view?usp=drive_link" download class="button btn3">My Resume</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/My-image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Chaitra H B Patil, a software developer from Bengaluru with expertise in Java, HTML, CSS, JavaScript, and React.js. I have hands-on experience in building web applications with responsive front-end designs and efficient back-end solutions.<br>
+                        I have worked at Blue Yonder, where I developed user-friendly UIs and scalable back-end services using React.js, Java, and Spring Boot. I specialize in creating dynamic web pages, integrating APIs, and optimizing performance to enhance user experiences.<br>
+                        I’m ready to join immediately and excited to contribute to innovative projects. If you're looking for a passionate developer, let’s connect and create something great together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Skills</span><br>Java, Python, SQL</li>
+                            <li><span>Front-End</span><br>HTML, CSS, JavaScript, React.js</li>
+                            <li><span>Back-End</span><br>Node.js, Spring Boot, Microservices, SQL</li>
+                            <li><span>Databases</span><br>MySQL, PostgreSQL, MongoDB</li>
+                            <li><span>Tools & Platforms</span><br>Git, Jira, Eclipse, IntelliJ, Postman, Docker</li>
+                            <li><span>Other Skills</span><br>RESTful APIs, Agile & Scrum Methodologies, Unit Testing (JUnit, Mockito)</li>
+                        </ul>
+                    </div> 
+                    
+                    <div class="tab-contents" id="experience">
+                        <h3>Blue Yonder | Apprentice – Product Development</h3>
+                        <ul>
+                            <li><span>March 2024 – March 2025 | Bengaluru, KA</span><br><br>• Developed front-end and back-end components, enhancing application functionality.
+                                <br><br>• Collaborated with cross-functional teams to resolve issues and implement new features, 
+                                improving team efficiency.<br><br>
+                                • Gained hands-on experience with Java, Spring Boot, Hibernate, Microservices, Gradle, and 
+                                Maven.<br><br>
+                                • Worked with APIs, Logical Models, Functional Tests, and Unit Testing to ensure high-quality 
+                                code.<br><br>
+                                • Utilized Jira and GitHub for project management and version control.
+                                </li>
+                            
+                        </ul>
+                    </div>  
+                    
+                    <div class="tab-contents" id="education">
+                        <h3>Bachelor of Engineering – Computer Science and Engineering</h3>
+                        <ul>
+                            <li><span>2019 - 2023 | 7.05 CGPA</span><br><br>Basaveshwar Engineering College, Bagalkot
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- --------------------Services----------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2><br>
+                    <p>I specialize in building modern, responsive, and user-friendly web interfaces. With expertise in HTML, CSS, JavaScript, and various front-end libraries, I create seamless and visually appealing experiences across devices. Whether it’s designing interactive web applications, optimizing performance, or ensuring accessibility, I bring functionality and aesthetics together to enhance user engagement. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Back-End Development</h2><br>
+                    <p>I develop robust, scalable, and efficient back-end systems that power seamless digital experiences. With expertise in Java and other back-end technologies, I design APIs, manage databases, and optimize server-side performance to ensure reliability and security. Whether it’s building RESTful services, integrating third-party systems, or enhancing application efficiency, I focus on delivering high-quality, maintainable solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>SQL Development</h2><br>
+                    <p>I design and optimize efficient database solutions to ensure seamless data management and high performance. With expertise in SQL, I create well-structured databases, write complex queries, and improve database efficiency through indexing and optimization. Whether it's designing relational schemas, managing data migrations, or ensuring data integrity, I build reliable and scalable database solutions tailored to business needs.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- --------------------Project----------------------- -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1> <br>
+                <p1>Cook Gallery</p1><br>
+                <p2>A Mobile Application</p2><br><br>
+                <p3> 
+                    A web application that helps users discover recipes based on their selected state and available ingredients. Users input their location and ingredients, and the app suggests matching regional recipes for a personalized cooking experience.
+                </p3>
+            <div class="project-list">   
+                <div class="project">
+                    <img src="images/P1.jpg">
+                </div>
+                <div class="project">
+                    <img src="images/P2.jpg">
+                </div>
+                <div class="project">
+                    <img src="images/P3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> reddychaitra07@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6366280220</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chaitrabpatil/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/chaitra-b-patil"><i class="fa-brands fa-square-github"></i></a>
+                    </div><br>
+                    <a href="images/Chaitra H B Patil.pdf" download class="button btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Chaitra Patil. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbze9YvrQW1JNoC_SzNxZmERfafIQI375yE4BeYC70LiSP0NLc03eWilmLp1aQR4lrEa/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
